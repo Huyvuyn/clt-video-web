@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mô Phỏng Biến Động Giá Chứng Khoán</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}?v=3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <h1><i class="fa-solid fa-layer-group" style="color: #38bdf8;"></i> Hệ Thống Giao Dịch</h1>
+            <p>Hệ thống mô phỏng và trực quan hóa luồng dữ liệu chứng khoán</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2><i class="fa-solid fa-chart-candlestick"></i> Phân tích giao dịch trực quan</h2>
+                <div class="video-container">
+                    <video controls playsinline preload="metadata">
+                        <source src="{{ url_for('static', path='/video/simulation_abc.mp4') }}" type="video/mp4">
+                        Trình duyệt không hỗ trợ video HTML5.
+                    </video>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-info">
+            <p>Bài Thi Giữa Kì Môn Python nâng cao &copy; 2026 | Thực hiện bởi Trần Vũ Huy</p>
+        </footer>
+    </div>
+</body>
+</html>
